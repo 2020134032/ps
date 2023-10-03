@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\section1">
+      <UniqueIdentifier>{bcf75930-34df-478e-9bb5-be295cb07144}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cppAlgorithm.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="2559수열.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="10972다음순열.cpp">
+      <Filter>Source Files\section1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
