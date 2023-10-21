@@ -16,6 +16,9 @@
     <Filter Include="Source Files\section1">
       <UniqueIdentifier>{bcf75930-34df-478e-9bb5-be295cb07144}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\section2">
+      <UniqueIdentifier>{72b1d97d-7de7-4274-b1a1-d149ea08294b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cppAlgorithm.cpp">
@@ -27,23 +30,29 @@
     <ClCompile Include="permutation2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="1259팰린드롬수.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="10809.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2309일곱난쟁이.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="9996한국에접속.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="2559수열.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="10972다음순열.cpp">
       <Filter>Source Files\section1</Filter>
+    </ClCompile>
+    <ClCompile Include="2309일곱난쟁이.cpp">
+      <Filter>Source Files\section1</Filter>
+    </ClCompile>
+    <ClCompile Include="9996한국에접속.cpp">
+      <Filter>Source Files\section1</Filter>
+    </ClCompile>
+    <ClCompile Include="2559수열.cpp">
+      <Filter>Source Files\section1</Filter>
+    </ClCompile>
+    <ClCompile Include="1259팰린드롬수.cpp">
+      <Filter>Source Files\section1</Filter>
+    </ClCompile>
+    <ClCompile Include="findway.cpp">
+      <Filter>Source Files\section2</Filter>
+    </ClCompile>
+    <ClCompile Include="2178미로탐색.cpp">
+      <Filter>Source Files\section2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
