@@ -23,6 +23,14 @@ void go(int y, int x) {
 	}
 }
 
+/*void dfs(int u) {
+	visited[u] = 1;
+	for( int i : adj[u]){
+		if (visited[i]==0){
+			dfs(i)
+		}
+}*/
+
 int main() {
 	for (int i = 0;i < n;i++) {
 		for (int j = 0; j < n;j++) {
