@@ -54,5 +54,8 @@
     <ClCompile Include="2_2178미로탐색.cpp">
       <Filter>Source Files\section2</Filter>
     </ClCompile>
+    <ClCompile Include="2_2468안전영역.cpp">
+      <Filter>Source Files\section2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
