@@ -12,17 +12,6 @@ string go(int y, int x, int side) {
 
 	string s1, s2, s3, s4;
 
-	//if (side == 2) {
-	//	s1 = string(1, map[y][x]);
-	//	s2 = string(1, map[y][x+1]);
-	//	s3 = string(1, map[y+1][x]);
-	//	s4 = string(1, map[y+1][x+1]);
-	//	if (s1 == s2 && s2 == s3 && s3 == s4) {
-	//		return s1;
-	//	}
-	//	else return "(" + s1 + s2 + s3 + s4 + ")";
-	//} // 2
-
 	int next = side / 2;
 
 	s1 = go(y, x, side / 2);
@@ -48,13 +37,6 @@ int main() {
 			
 		}
 	}
-
-	/*for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			cout << map[i][j];
-		}
-		cout << "\n";
-	}*/
 
 	cout << go(0,0,N);
 
