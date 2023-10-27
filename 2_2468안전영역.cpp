@@ -40,9 +40,7 @@ int main() {
 		int* col = new int[N];
 		int* v = new int[N];
 		for (int j = 0; j < N;j++) {
-			char temp;
-			cin >> temp;
-			col[j] = temp - '0';
+			cin >> col[j];
 			minheight = minheight< col[j] ? minheight : col[j];
 			maxheight = maxheight> col[j] ? maxheight : col[j];
 			v[j] = 0;
@@ -52,8 +50,8 @@ int main() {
 		visit[i] = v;
 	}
 
-	int maxres = 0;
-	cout << minheight << " " << maxheight;
+	int maxres = 1;
+	//cout << minheight << " " << maxheight<<endl; // debug
 	for (int i = minheight; i < maxheight;i++) {
 
 		int tempres = 0;
@@ -66,7 +64,7 @@ int main() {
 				}
 			}
 		} 
-		cout << "maxres:" << maxres << " tempres: " << tempres << endl;
+		//cout<<"i: "<<i << " maxres:" << maxres << " tempres: " << tempres << endl; //debug
 		maxres = maxres > tempres ? maxres : tempres;
 		
 	}
