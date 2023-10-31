@@ -60,5 +60,8 @@
     <ClCompile Include="2e_1992_안전탐색.cpp">
       <Filter>Source Files\section2</Filter>
     </ClCompile>
+    <ClCompile Include="2n_9012괄호.cpp">
+      <Filter>Source Files\section2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
