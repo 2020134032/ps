@@ -4,13 +4,24 @@
 #include <algorithm>
 using namespace std;
 
-int N, M;
+int N, M,result=912345678;
 vector<pair<int, int>> home, ck;
 vector<vector<int>> combs, cdistance;
 
 void generate_comb(vector<int> singlecomb, int start) {
 	if (singlecomb.size() == M) {
-		combs.push_back(singlecomb);
+		int thisComb = 0; // addup
+		
+		for (vector<int> distancesForHome : cdistance) {
+
+			int ckDforthisHome=918273465;
+			for (int index : singlecomb) {
+				ckDforthisHome = min(ckDforthisHome, distancesForHome[index]);
+			}
+			thisComb += ckDforthisHome;
+		}
+
+		result = min(result, thisComb);
 		return;
 	}
 
@@ -46,24 +57,6 @@ int main() {
 
 	vector<int> temp;
 	generate_comb(temp, -1);
-
-	int result=912384756;
-
-	for (vector<int> singlecomb : combs) {
-
-		int thiscombmin = 0;
-		for (vector<int> singlehome : cdistance) {
-			int minbetween = 9123456;
-			for (int index : singlecomb) {
-				minbetween = min(minbetween, singlehome[index]);
-			}
-
-
-			thiscombmin += minbetween;
-		}
-
-		result = min(thiscombmin, result);
-	}
 	cout << result;
 	
 
