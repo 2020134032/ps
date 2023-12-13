@@ -22,6 +22,15 @@
     <Filter Include="Source Files\section3">
       <UniqueIdentifier>{c276f8fa-242c-4bb7-89ce-771e19460201}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\section4">
+      <UniqueIdentifier>{1c0c0229-93b1-440a-91a5-192e42da1409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\section5">
+      <UniqueIdentifier>{b8c85c42-43ce-4d07-9a89-2d36ffc93d54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\section7">
+      <UniqueIdentifier>{79ffe487-5cc5-4a02-b5d7-752729f91b36}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="e_cppAlgorithm.cpp">
@@ -68,6 +77,27 @@
     </ClCompile>
     <ClCompile Include="3_a_15686치킨배달.cpp">
       <Filter>Source Files\section3</Filter>
+    </ClCompile>
+    <ClCompile Include="3_c_16234인구이동.cpp">
+      <Filter>Source Files\section3</Filter>
+    </ClCompile>
+    <ClCompile Include="shifting.cpp">
+      <Filter>Source Files\section4</Filter>
+    </ClCompile>
+    <ClCompile Include="4_a_19942다이어트.cpp">
+      <Filter>Source Files\section4</Filter>
+    </ClCompile>
+    <ClCompile Include="4_c_17471게리맨더링.cpp">
+      <Filter>Source Files\section4</Filter>
+    </ClCompile>
+    <ClCompile Include="4_a_2109순회강연.cpp">
+      <Filter>Source Files\section5</Filter>
+    </ClCompile>
+    <ClCompile Include="7_0_2240자두나무.cpp">
+      <Filter>Source Files\section7</Filter>
+    </ClCompile>
+    <ClCompile Include="ref_var_VS_pointers.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
