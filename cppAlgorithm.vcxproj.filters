@@ -90,7 +90,7 @@
     <ClCompile Include="4_c_17471게리맨더링.cpp">
       <Filter>Source Files\section4</Filter>
     </ClCompile>
-    <ClCompile Include="4_a_2109순회강연.cpp">
+    <ClCompile Include="5_a_2109순회강연.cpp">
       <Filter>Source Files\section5</Filter>
     </ClCompile>
     <ClCompile Include="7_0_2240자두나무.cpp">
@@ -98,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="ref_var_VS_pointers.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="5_b_9935문자열폭발.cpp">
+      <Filter>Source Files\section5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
