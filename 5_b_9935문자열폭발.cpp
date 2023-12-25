@@ -21,7 +21,7 @@ int main() {
 				{
 					if (target[target_len - 1 - j] != res[res.length() - 1 - j])
 					{
-						int flag = 0;
+						flag = 0;
 						break;
 					}
 				}
