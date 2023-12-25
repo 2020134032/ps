@@ -108,5 +108,8 @@
     <ClCompile Include="6_a_2792보석상자.cpp">
       <Filter>Source Files\section6</Filter>
     </ClCompile>
+    <ClCompile Include="4_16_3015오아시스재결합.cpp">
+      <Filter>Source Files\section4</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
