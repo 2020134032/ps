@@ -31,6 +31,9 @@
     <Filter Include="Source Files\section7">
       <UniqueIdentifier>{79ffe487-5cc5-4a02-b5d7-752729f91b36}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\section6">
+      <UniqueIdentifier>{6ed7b33f-fdf5-4b82-a415-35484f907334}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="e_cppAlgorithm.cpp">
@@ -101,6 +104,9 @@
     </ClCompile>
     <ClCompile Include="5_b_9935문자열폭발.cpp">
       <Filter>Source Files\section5</Filter>
+    </ClCompile>
+    <ClCompile Include="6_a_2792보석상자.cpp">
+      <Filter>Source Files\section6</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

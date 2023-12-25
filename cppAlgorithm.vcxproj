@@ -148,7 +148,10 @@
     <ClCompile Include="4_c_17471게리맨더링.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="5_b_9935문자열폭발.cpp" />
+    <ClCompile Include="5_b_9935문자열폭발.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="6_a_2792보석상자.cpp" />
     <ClCompile Include="7_0_2240자두나무.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
