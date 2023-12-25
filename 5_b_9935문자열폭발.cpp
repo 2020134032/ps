@@ -2,26 +2,37 @@
 #include <string>
 using namespace std;
 
-string input,target;
+string input, target;
 
 int main() {
-	getline(cin, input);
-	getline(cin, target);
+	cin >> input >> target;
 
+	int target_len = target.length();
 	string res = "";
-	for(int i = 0; i< input.length(); i++){
+	for (int i = 0; i < input.length(); i++) 
+	{
 		res += input[i];
-		if (res.length() >= target.length()) {
-			while (res.substr(res.length() - target.length()).compare(target) == 0) {
-				res.replace(res.length() - target.length(), target.length(), "");
-				if (res.length() < target.length()) break;
+		if (input[i] == target[target_len - 1])
+		{
+			if (res.length() >= target_len)
+			{
+				int flag = 1;
+				for (int j = 0; j < target_len; j++) 
+				{
+					if (target[target_len - 1 - j] != res[res.length() - 1 - j])
+					{
+						int flag = 0;
+						break;
+					}
+				}
+				if(flag) res.erase(res.length() - target_len);
 			}
 		}
 	}
-	
 
-	cout << (res.compare("") ? res:"FRULA");
-	
+
+	cout << (res.compare("") ? res : "FRULA");
+
 
 
 
