@@ -15,11 +15,11 @@ int fact(const int n) {
 
 
 int go(int n, int one, int two, int three){
-	//기저사례
+	// 메모이제이션 체크
 	if (visited[one][two][three]) {
 		return dp[one][two][three];
 	}
-	// 메모이제이션 체크
+	//기저사례
 	else if (one <= 1 && two <= 3 && three <= 9) {
 		return visited[one][two][three] = dp[one][two][three] = 1;
 	}
