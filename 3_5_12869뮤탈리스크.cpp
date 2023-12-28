@@ -69,13 +69,7 @@ using namespace std;
 
 int N, visited[61][61][61], dp[61][61][61];
 vector<int> scv;
-
-
-int fact(const int n) {
-	if (n == 3) return 6;
-	else return n;
-}
-
+int fact[] = {0,1,2,6};
 
 
 int go(int n, int one, int two, int three) {
@@ -88,7 +82,7 @@ int go(int n, int one, int two, int three) {
 
 	int attack[] = { 1,3,9 };
 	int minv = 981273645;
-	for (int i = 0; i < fact(n);i++) {
+	for (int i = 0; i < fact[n];i++) {
 		int arr[3];
 		arr[0] = max(0, one - attack[0]);
 		arr[1] = max(0, two - attack[1]);

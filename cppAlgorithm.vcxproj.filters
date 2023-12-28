@@ -120,5 +120,13 @@
     <ClCompile Include="2_2_1012유기농배추.cpp">
       <Filter>Source Files\section2</Filter>
     </ClCompile>
+    <ClCompile Include="3_2_2589보물섬.cpp">
+      <Filter>Source Files\section3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="3_0._완전탐색txt">
+      <Filter>Source Files\section3</Filter>
+    </None>
   </ItemGroup>
 </Project>
