@@ -1,38 +1,28 @@
 #include <iostream>
 #include <queue>
+#include <utility>
 using namespace std;
-struct A {
-	int first, second;
-	bool fire;
-};
 
 int R, C;
 const int MM = 1000;
 int visit[MM][MM];
 int player[MM][MM];
+bool p[MM][MM];
 int alive = 1;
 int dy[] = { -1,0,1,0 };
 int dx[] = { 0,1,0,-1 };
 
-queue<A> q;
-int bfs(int a, int b, bool fire) {
-	int res = 0;
+queue<pair<int, int>> q;
+
+int bfs(int a, int b) {
 	visit[a][b] = 1;
-	player[a][b] = true;
-	if (q.empty()) q.push({ a,b,false });
+	player[a][b] = 1;
+	q.push({ a,b });
+	bool wasP = false;
 	while (!q.empty()) {
-		res++;
-		
-		bool isPlayer = false;
-		if (player[a][b]) {
-			isPlayer = true;
-			if (fire) {
-				res--;
-				a = q.front().first; b = q.front().second; fire = q.front().fire;
-				q.pop();
-				continue;
-			}
-		}
+		a = q.front().first; b = q.front().second;
+		q.pop();
+
 		for (int i = 0; i < 4; i++)
 		{
 			int na = a + dy[i];
@@ -44,29 +34,35 @@ int bfs(int a, int b, bool fire) {
 			if (player[a][b]) {
 				if (visit[na][nb]) continue;
 				visit[na][nb] = 1;
-				player[na][nb] = player[a][b] +1;
-				alive++; q.push({ na,nb,false });
+				player[na][nb] = player[a][b] + 1;
+				alive++; q.push({ na,nb });
+				wasP = true;
 			}
 			else { //fire
+				if (wasP && alive <= 0) return -1;
+				wasP = false;
 				if (!visit[na][nb] || player[na][nb]) {
 					if (player[na][nb]) {
-						player[na][nb] = 0;
+						p[na][nb] = true;
 						alive--;
 					}
-						q.push({ na,nb,true });
-					if (alive <= 0) return -1;
+						q.push({ na,nb });
+						visit[na][nb] = 1;
+
 				}
 			}
 		}
-		a = q.front().first; b = q.front().second; fire = q.front().fire;
-		q.pop();
+		if (wasP && player[a][b] && p[a][b]) player[a][b] = 0;
+
 	}
 	return -1;
 
 }
 int main() {
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
 	cin >> R >> C;
-	A start;
+	pair<int, int> start;
 	for (int i = 0; i < R; i++)
 	{
 		for (int j = 0; j < C; j++)
@@ -74,16 +70,16 @@ int main() {
 			char temp;
 			cin >> temp;
 			if (temp == '#') visit[i][j] = 1;
-			else if	(temp == 'F') {
-				q.push({ i,j,true });
+			else if (temp == 'F') {
+				q.push({ i,j });
 				visit[i][j] = 1;
 			}
-			
-			else if (temp == 'J') start = { i,j,false };
+
+			else if (temp == 'J') start = { i,j };
 		}
 	}
 
-	int res = bfs(start.first, start.second, false);
+	int res = bfs(start.first, start.second);
 
 	if (res == -1) cout << "IMPOSSIBLE";
 	else cout << res;
