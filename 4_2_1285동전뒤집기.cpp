@@ -14,32 +14,32 @@ int main() {
 		}
 	} //
 
-	int res = 0;
-	for (int i = 0; i < 1<<(2*N); i++) {
-		int _res = 0;
+	int res = 1e9;
+	for (int i = 0; i < 1<<N; i++) {
 
-		int flipped[40] = { 0 };
-		for (int j = 0; j < 2*N; j++) {
-			if (i & (1<<j)) flipped[j] = 1;
-		}
-		for (int y = 0; y < N; y++) {
-			for (int x = 0; x < N; x++) {
-				int b = (flipped[y] + flipped[x+N] == 1 ? 1 : 0);
-				_res += coin[y][x] ^ b;
-				
-				/*if (coin[y][x]) {
-					if (b) continue;
-					else _res++;
-				}
-				else {
-					if (b) _res++;
-					else continue;
-				}*/
+		int copy[20][20];
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < N; j++) {
+				copy[i][j] = coin[i][j];
 			}
 		}
-		res = res > _res ? res : _res;
+		int _res = 0;
+
+		for (int j = 0; j < N; j++) {
+			if (i & 1 << j) {
+				for (int y = 0; y <N; y++) copy[y][j] ^= 1; //flip
+			}
+		}
+		for (int y = 0; y < N; y++) {
+			int sum = 0;
+			for (int x = 0; x < N; x++) {
+				sum += copy[y][x];
+			}
+			_res += sum < N - sum ? sum : N - sum;
+		}
+		res = res < _res ? res : _res;
 	}
-	cout << N*N - res;
+	cout << res;
 	return 0;
 
 }
