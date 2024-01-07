@@ -135,6 +135,9 @@
     <ClCompile Include="4_5_14980경사로.cpp">
       <Filter>Source Files\section4</Filter>
     </ClCompile>
+    <ClCompile Include="4_6_1062가르침.cpp">
+      <Filter>Source Files\section4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="3_0._완전탐색txt">
