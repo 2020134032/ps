@@ -21,6 +21,7 @@ int main() {
 	int sum = 0;
 
 	for (int i = 0; i < v.size();i++) {
+
 		sum += v[i].second;
 		pq.push(v[i].second);
 		if (pq.size() > v[i].first) {

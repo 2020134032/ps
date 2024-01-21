@@ -138,6 +138,30 @@
     <ClCompile Include="4_6_1062가르침.cpp">
       <Filter>Source Files\section4</Filter>
     </ClCompile>
+    <ClCompile Include="3_F_16637괄호추가하기.cpp">
+      <Filter>Source Files\section3</Filter>
+    </ClCompile>
+    <ClCompile Include="5_c컵라면.cpp">
+      <Filter>Source Files\section5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_d_14469소가길을건너간이유3.cpp">
+      <Filter>Source Files\section5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_e_1931회의실배정.cpp">
+      <Filter>Source Files\section5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_z_2170선긋기.cpp">
+      <Filter>Source Files\section5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_G_1644소수의 연속합.cpp">
+      <Filter>Source Files\section5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_h_13144listOfUniqueNum.cpp">
+      <Filter>Source Files\section5</Filter>
+    </ClCompile>
+    <ClCompile Include="5_i_3273두수의합.cpp">
+      <Filter>Source Files\section5</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="3_0._완전탐색txt">
